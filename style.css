@@ -17,7 +17,7 @@ body {
     height: 50px;
 }
 .logo-text {
-    font-size: 30px;
+    font-size: 25px;
 }
 .action {
     height: 40px;
@@ -29,13 +29,15 @@ body {
     background-color: rgb(255, 235, 215);
     border-radius: 10px;
 }
-.reload-data, #button-add-cat, .cat__edit, .cat__delete {
+.reload-data, #button-add-cat, .cat__edit, .cat__delete, #buttonLogout {
     font-family: "Comic Sans MS", sans-serif;
     border-radius: 5px;
-    margin: 5px;
+    margin: 5px 15px 5px 15px;
     cursor: pointer;
+    border: transparent;
+    box-shadow: 0 0 5px 0 black;
 }
-.reload-data:hover, #button-add-cat:hover, .cat__edit:hover, .cat__delete:hover {
+.reload-data:hover, #button-add-cat:hover, .cat__edit:hover, .cat__delete:hover, #buttonLogout:hover, #btn_submit:hover {
     background-color: rgb(255, 205, 155);;
     transition: background-color 0.3s ease-in;
 }
@@ -66,6 +68,7 @@ body {
     height: 200px;
     width: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 .cat__title {
     margin-top: 10px;
@@ -92,7 +95,7 @@ body {
 }
 .popup__container {
     background-color: rgb(255, 235, 215);
-    padding: 20px;
+    padding: 40px;
     border-radius: 20px;
     width: 400px;
     height: auto;
@@ -100,8 +103,8 @@ body {
 }
 .popup__close { 
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 5px;
+    right: 5px;
     cursor: pointer;
     background-image: url('img/close.png');
     background-size: contain;
@@ -114,9 +117,34 @@ body {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    border-radius: 10px;
 }
 .popup__name {
     font-size: 24px;
+}
+.popup__form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    padding: 20px 0 20px 0;
+}
+input {
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-family: "Comic Sans MS", sans-serif;
+    text-align: center;
+    box-shadow: 0 0 5px 0 black;
+    border: transparent;
+}
+#btn_submit {
+    height: 30px;
+    border-radius: 5px;
+    font-family: "Comic Sans MS", sans-serif;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 black;
+    border: transparent;
 }
 .footer {
     height: 30px;
@@ -124,7 +152,7 @@ body {
     align-items: center;
     justify-content: center;
     box-shadow: 0 0 5px 0 black;
-    margin: 10px 0 10px 0;
+    margin: 30px 0 10px 0;
     background-color: rgb(255, 235, 215);
     border-radius: 10px;
 }

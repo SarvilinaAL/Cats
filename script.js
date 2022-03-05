@@ -1,3 +1,9 @@
+if (!Cookies.get('user')) {
+    window.location.replace('auth.html')
+}
+
+const logout = document.querySelector('#buttonLogout');
+
 const rootPopup = document.querySelector('.root-popup');
 const popupCats = document.querySelector('.popup_type_cats-info');
 const popupAddCats = document.querySelector('.popup_type_cats-add');
@@ -201,6 +207,12 @@ function reloadData() {
 buttonAddCat.addEventListener('click', handleClickButtonAdd);
 rootPopup.addEventListener('click', handleClickCloseBtn);
 buttonReloadData.addEventListener('click', reloadData);
+
+logout.addEventListener('click', (e) => {
+    window.location.replace('auth.html');
+    Cookies.remove('user');
+    localStorage.clear();
+})
 
 getCats();
 

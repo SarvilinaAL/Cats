@@ -1,0 +1,68 @@
+html {
+    font-family: "Comic Sans MS", sans-serif;
+    background-image: url('img/back.jpg');
+    background-size: auto;
+}
+.page__content {
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 5px 0 black;
+    border-radius: 10px;
+    background-color: rgb(255, 235, 215);
+    box-shadow: 0 0 5px 0 black;
+}
+.logo-img {
+    height: 50px;
+}
+.logo-text {
+    font-size: 25px;
+}
+.header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 10px 0 20px 0;
+    background-color: rgb(255, 235, 215);
+    border-radius: 10px;
+}
+.auth_form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+.auth-form__input {
+    height: 30px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-family: "Comic Sans MS", sans-serif;
+    text-align: center;
+    box-shadow: 0 0 5px 0 black;
+    border: transparent;
+}
+.auth-form__submit-btn {
+    height: 35px;
+    border-radius: 5px;
+    font-family: "Comic Sans MS", sans-serif;
+    cursor: pointer;
+    box-shadow: 0 0 5px 0 black;
+    border: transparent;
+}
+.auth-form__submit-btn:hover {
+    background-color: rgb(255, 205, 155);;
+    transition: background-color 0.3s ease-in;
+}
+.footer {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 10px 0;
+    background-color: rgb(255, 235, 215);
+    border-radius: 10px;
+}

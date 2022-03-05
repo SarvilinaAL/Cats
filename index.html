@@ -16,8 +16,9 @@
 </header>
 
 <div class="action">
-    <button type="button" class="reload-data">Обновить данные о котах</button>
-    <button type="button" id="button-add-cat">Добавить кота</button>
+    <button type="button" class="reload-data">Обновить данные о котиках</button>
+    <button type="button" id="button-add-cat">Добавить котика</button>
+    <button type="button" id="buttonLogout">Выйти</button>
 </div>
 
 <body>
@@ -40,26 +41,26 @@
 
         <div class="popup popup_type_cats-add">
             <div class="popup__container">
-                <button type="button" class="popup__close">x</button>
+                <button type="button" class="popup__close"></button>
                 <form class="popup__form">
                     <input type="text" placeholder="id" name="id" id="id">
                     <input type="text" placeholder="Имя" name="name" id="name">
                     <input type="text" placeholder="Изображение" name="img_link" id="img_link">
                     <input type="text" placeholder="Описание" name="description" id="description">
-                    <button type="submit">Отправить</button>
+                    <button type="submit" id="btn_submit">Отправить</button>
                 </form>
             </div>
         </div>
 
         <div class="popup popup_type_cats-edit">
             <div class="popup__container">
-                <button type="button" class="popup__close">x</button>
+                <button type="button" class="popup__close"></button>
                 <form class="popup__form">
                     <input type="text" class="popup__form-input" placeholder="id" name="id">
                     <input type="text" class="popup__form-input" placeholder="Имя" name="name">
                     <input type="text" class="popup__form-input" placeholder="Изображение" name="img_link">
                     <input type="text" class="popup__form-input" placeholder="Описание" name="description">
-                    <button type="submit">Отправить</button>
+                    <button type="submit" id="btn_submit">Отправить</button>
                 </form>
             </div>
         </div>
